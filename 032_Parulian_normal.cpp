@@ -1,15 +1,15 @@
 #include <iostream>
 using namespace std;
 
-int EuclianGCD (int m, int n)
+int EuclideanGCD (int m, int n)//fungsi euclidean untuk menghitung FPB 
 {
-    int r;
-    while (n!=0){
-        r = m % n;
-        m = n;
-        n = r;
+    int r;//deklarasi variabel r
+    while (n!=0){//program akan berjalan selama n tidak sama dengan 0
+        r = m % n;//menyimpan sisa pembagian m dengan n sebagai r
+        m = n;//memasukkan nilai n ke nilai m
+        n = r;//memasukkan nilai r ke nilai n
     }
-    return m;
+    return m;//kembalikan nilai m sebagai hasil fpb
 }
 
 main (){
@@ -17,7 +17,7 @@ main (){
     int a,b;
     cout<<"Masukkan nilai bil1 : ";cin>>a;
     cout<<"Masukkan nilai bil2 : ";cin>>b;
-    int fpb=EuclianGCD(a,b);
+    int fpb=EuclideanGCD(a,b);//deklarasi fpb dan inisialisasi dengan nilai kembalian dari fungsi EuclideanGCD
     cout<<"FPB : "<<fpb<<endl;
     return 0;
 }
