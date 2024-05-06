@@ -5,7 +5,7 @@ int rekursifEuclideanGCD(int m, int n){
     if (n==0)//mengecek apakah n bernilai sama dengan 0 atau tidak 
         return m;//jika ya, maka kembalikan nilai m sebagai fpb 
     else //jika n tidak sama dengan 0
-        return rekursifEuclianGCD (n,m%n);//mengembalikan nilai dari fungsi rekursiEuclideanGCD tetapi dengan parameter n dan sisa pembagian m dengan n
+        return rekursifEuclideanGCD (n,m%n);//mengembalikan nilai dari fungsi rekursiEuclideanGCD tetapi dengan parameter n dan sisa pembagian m dengan n
 }
 main (){
     system("cls");
